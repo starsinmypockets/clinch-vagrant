@@ -33,3 +33,7 @@ Vagrant::Config.run do |config|
   config.vm.provision :shell, :inline => "sudo apt-get install -y ruby1.9.3 --no-install-recommends"
   config.vm.provision :shell, :inline => "sudo gem install cf"
 end
+
+Vagrant.configure("2") do |config|
+  config.vm.provision "shell", path: "/app/scripts/devUp.sh"
+end
