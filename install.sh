@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo kill `sudo lsof -t -i:3000`
 # make sure to install vagrant and virtual box:
 command -v vagrant >/dev/null || { echo "Vagrant not found. Install vagrant at https://www.vagrantup.com/downloads.html."; exit 1; }
 command -v mongo >/dev/null || { echo "Mongo DB not found. Install mongodb to continue."; exit 1; }
