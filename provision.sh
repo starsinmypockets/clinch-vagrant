@@ -1,7 +1,11 @@
 echo "Build clean database"
-mongorestore /home/vagrant/app/data/buildClean1 --db devLocal
-mv /home/vagrant/app/server/DEV.config.js /home/vagrant/app/server/config.js
-mkdir /home/vagrant/app/logs
+sudo mkdir /data/
+sudo mkdir /data/db/
+sudo mongod --fork --logpath /var/log/mongodb.log
+mongorestore /home/vagrant/app/data/buildClean1 --db build
+cp /home/vagrant/app/server/DEV.config.js /home/vagrant/app/server/config.js
+cp /home/vagrant/app/client/DEV.config.js /home/vagrant/app/client/config.js
+sudo mkdir /home/vagrant/app/logs
 sudo npm install
 
 sudo apt-get -y install vim
