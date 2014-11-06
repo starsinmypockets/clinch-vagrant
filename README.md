@@ -8,14 +8,18 @@ Instructions:
 
 • clone this repository: git clone git@github.com:starsinmypockets/clinch-vagrant.git
 
-• run install script (this will take 5-10 minutes to run):
+• from repository directory, run install script with two arguments (/path/to/parent/folder and projName). The app will take up to 10 minutes to install:
 
-    $ ./install.sh /path/to/parent/dir projName
+    $ /repos/clinch-vagrant/install.sh /path/to/parent/ projName
 
-• Project repository lives at /path/to/parent/dir/projName/app
+• Project codebase lives at /path/to/parent/projName/app
 
-• From project root, access virtual machine with:
+• From project root (/path/to/parent/projName), access virtual machine with:
 
     $ vagrant ssh
 
 • visit project at http://localhost:3000
+
+Knows Issues
+------------
+No inbound socket events are working, so you'll need to reload to check updated states.
