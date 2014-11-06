@@ -8,7 +8,7 @@ Instructions:
 
 • clone this repository: git clone git@github.com:starsinmypockets/clinch-vagrant.git
 
-• run install script:
+• run install script (this will take 5-10 minutes to run):
 
     $ ./install.sh /path/to/parent/dir projName
 
