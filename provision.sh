@@ -6,6 +6,7 @@ mongorestore /home/vagrant/app/data/buildClean1 --db build
 cp /home/vagrant/app/server/DEV.config.js /home/vagrant/app/server/config.js
 cp /home/vagrant/app/client/DEV.config.js /home/vagrant/app/client/config.js
 sudo mkdir /home/vagrant/app/logs
+cd /home/vagrant/app
 sudo npm install
 
 sudo apt-get -y install vim
