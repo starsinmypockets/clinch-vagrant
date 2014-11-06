@@ -35,5 +35,5 @@ Vagrant::Config.run do |config|
 end
 
 Vagrant.configure("2") do |config|
-  config.vm.provision "shell", path: "app/scripts/provision.sh"
+  config.vm.provision "shell", path: "provision.sh"
 end
