@@ -25,3 +25,5 @@ rm -rf app
 
 echo "Clone clinch build repository"
 git clone git@github.com:starsinmypockets/twf.git app
+
+vagrant up
